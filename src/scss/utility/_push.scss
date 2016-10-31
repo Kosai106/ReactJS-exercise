@@ -1,0 +1,66 @@
+
+//-- Top --------------
+
+@mixin top($top) {
+  padding-top: $top !important;
+}
+.push--top         { @include top(14px); }
+.push-double--top  { @include top(14px*2); }
+.push-triple--top  { @include top(14px*3); }
+.push-half--top    { @include top(14px/2);}
+
+//-- Bottom -----------
+
+@mixin bottom($bottom) {
+  padding-bottom: $bottom !important;
+}
+.push--bottom         { @include bottom(14px); }
+.push-double--bottom  { @include bottom(14px*2); }
+.push-triple--bottom  { @include bottom(14px*3); }
+.push-half--bottom    { @include bottom(14px/2);}
+
+//-- Left -------------
+
+@mixin left($left) {
+  padding-left: $left !important;
+}
+.push--left         { @include left(14px); }
+.push-double--left  { @include left(14px*2); }
+.push-triple--left  { @include left(14px*3); }
+.push-half--left    { @include left(14px/2);}
+
+//-- Right ------------
+
+@mixin right($right) {
+  padding-right: $right !important;
+}
+.push--right         { @include right(14px); }
+.push-double--right  { @include right(14px*2); }
+.push-triple--right  { @include right(14px*3); }
+.push-half--right    { @include right(14px/2);}
+
+//-- Sides ------------
+
+@mixin sides($sides) {
+  padding-left: $sides !important;
+  padding-right: $sides !important;
+}
+.push--sides         { @include sides(14px); }
+.push-double--sides  { @include sides(14px*2); }
+.push-triple--sides  { @include sides(14px*3); }
+.push-half--sides    { @include sides(14px/2);}
+
+//-- Ends -------------
+
+@mixin ends($ends) {
+  padding-top: $ends !important;
+  padding-bottom: $ends !important;
+}
+.push--ends         { @include ends(14px); }
+.push-double--ends  { @include ends(14px*2); }
+.push-triple--ends  { @include ends(14px*3); }
+.push-half--ends    { @include ends(14px/2);}
+
+//-- None -------------
+
+.push--none         { padding: 0; }

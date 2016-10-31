@@ -1,0 +1,70 @@
+!!!5
+%html{lang: 'en'}
+  %head
+    %meta{charset: 'utf-8'}
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0'}
+    %title Application
+
+    %link{href: './css/application.css', rel: 'stylesheet'}
+
+  %body
+
+    %nav
+      .columns.small-3.logo
+        %a{href: 'index.html'}
+          %h1 LOGO GOES HERE
+      .columns.small-9
+        .row.push-half--top
+          .columns.small-4.medium-6.large-8.xlarge-8.xxlarge-8.push--none
+            %input.search{placeholder: 'Search...'}
+
+
+          .columns.small-8.medium-6.large-4.xlarge-4.xxlarge-4.push--none
+            .user.float--right{"data-toggle" => "example-dropdown", type: "button"}
+              %span.chamber-triple--left Username
+              %img.avatar{src: 'https://d3iw72m71ie81c.cloudfront.net/male-5.jpg'}
+            %ul#example-dropdown.dropdown-pane.menu.vertical{"data-close-on-click" => "true", "data-dropdown" => ""}
+              %li
+                %a.menu{href: '#'}
+                  %i.fa.fa-user
+                  Profile
+              %li
+                %a.menu{href: '#'}
+                  %i.fa.fa-cog
+                  Settings
+              %li
+                %a.menu{href: '#'}
+                  %i.fa.fa-sign-out
+                  Logout
+            %a.cta.float--right{href: '#'} Upload content
+
+    %main
+      .columns.small-3.sidebar.push-double--top
+        %span Sidebar
+        %footer.text--center
+          %span Copyright &copy; 2016 Copyright Holder All Rights Reserved.
+
+      .columns.small-9.main
+        %section.top.cf
+          .columns.small-3
+            %select
+              %option Date
+          .columns.small-3
+            %select
+              %option Category
+          .columns.small-3
+            %select
+              %option Popularity
+
+          .columns.small-3
+            %span.layout.float--right
+              %i.fa.fa-th.push--right
+              %i.fa.fa-bars
+
+        %section.scroll
+          .row.bottom
+            %img.random{src: 'https://d13yacurqjgara.cloudfront.net/users/85668/screenshots/2381986/cruise.me2.jpg', width: '100%'}
+
+    %script{src: './node_modules/jquery/dist/jquery.min.js', type: 'text/javascript'}
+    %script{src: './node_modules/foundation-sites/dist/foundation.min.js'}
+    %script{src: './js/app.js', type: 'text/javascript'}
