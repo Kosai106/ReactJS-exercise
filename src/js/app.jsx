@@ -1,21 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import All from './all';
+import { render } from 'react-dom';
+import { Router, browserHistory } from 'react-router';
+import routes from './routes';
 
 import './../scss/application.scss';
 
-const app = document.getElementById('app');
-
-ReactDOM.render(
-  <All />, app
-);
-
-/*
-$(document).foundation();
-
-function cardFavorite(e) {
-  var src = $(e).find('i');
-  src.toggleClass("fa-heart-o fa-heart")
-return false
-}
-*/
+render(<Router history={browserHistory} routes={routes} />, document.getElementById('app'));

@@ -37,7 +37,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(scss|sass)$/,
+        test: /\.(scss|sass|css)$/,
         loader: ExtractTextPlugin.extract(
           'style', 'css!postcss!sass'
         ),

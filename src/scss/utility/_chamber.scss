@@ -46,6 +46,7 @@
   margin-right: $sides !important;
 }
 .chamber--sides         { @include sides(14px); }
+.chamber-none--sides    { @include sides(0px); }
 .chamber-double--sides  { @include sides(14px*2); }
 .chamber-triple--sides  { @include sides(14px*3); }
 .chamber-half--sides    { @include sides(14px/2);}

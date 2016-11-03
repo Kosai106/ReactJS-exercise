@@ -26,6 +26,8 @@
     "max-len": [0],
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
+    "react/jsx-boolean-value": [0],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
   },
   "parserOptions": {
     "sourceType": "module",

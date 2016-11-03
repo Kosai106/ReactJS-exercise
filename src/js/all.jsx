@@ -1,6 +1,12 @@
 import React from 'react';
 import 'font-awesome-webpack';
+import 'whatwg-fetch';
 import Main from './components/main';
+import Navigation from './components/navigation';
+import Sidebar from './components/sidebar';
+import Subnav from './components/subnav';
+
+const data = require('!json!./../json/data.json');
 
 class All extends React.Component {
   constructor(props) {
@@ -12,7 +18,17 @@ class All extends React.Component {
   render() {
     return (
       <div>
-        <Main />
+        <nav>
+          <Navigation />
+        </nav>
+
+        <main>
+          <Sidebar />
+          <div className="columns small-9 main">
+            <Subnav />
+            <Main content={data} />
+          </div>
+        </main>
       </div>
     );
   }
