@@ -6,6 +6,8 @@ import Navigation from './components/navigation';
 import Sidebar from './components/sidebar';
 import Subnav from './components/subnav';
 
+import './../scss/application.scss';
+
 const data = require('!json!./../json/data.json');
 
 class All extends React.Component {

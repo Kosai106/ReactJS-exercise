@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './../../scss/components/sidebar.scss';
+
 class Sidebar extends React.Component {
   constructor(props) {
     super(props);

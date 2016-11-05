@@ -1,0 +1,14 @@
+@import "./../utility/all";
+
+.sidebar {
+  position: relative;
+  background: $color-dark-grey;
+  color: $color-grey;
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - (.9375rem * 2));
+    padding: 14px 0;
+    font-size: .8em;
+  }
+}

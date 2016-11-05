@@ -1,0 +1,79 @@
+@import "./../utility/all";
+
+.card {
+  height: auto !important;
+  padding: .9375rem;
+  &:last-of-type {
+    float: left !important;
+  }
+  a {
+    height: auto;
+    .container {
+      border-radius: 2px;
+      background: $color-white;
+      box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.10);
+      transition: all .2s ease-in-out 0s;
+      &:hover {
+    		box-shadow: 0px 12px 20px 0px rgba(0,0,0,0.10);
+    	}
+      img {
+        height: 245px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 2px 2px 0 0;
+        &[src=""] {
+          content: url('https://s-media-cache-ak0.pinimg.com/originals/84/71/e2/8471e2efdd2d3164895748ee8673124d.jpg');
+        }
+      }
+    }
+    .details {
+      padding: .9375rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .top {
+        width: 100%;
+        .title {
+          color: $color-dark-grey;
+          @include truncate(100%);
+          &:empty {
+            &:before {
+              content: 'No title found';
+            }
+          }
+        }
+      }
+      .bottom {
+        width: 100%;
+        padding: 0;
+        padding-top: 6px;
+        .rating {
+          float: left;
+          height: 24px;
+          .dv-star-rating {
+            .dv-star-rating-star {
+              font-size: 1em;
+              margin-left: 0;
+              .fa-star-o {
+                color: $color-dark-grey;
+              }
+              .fa-star {
+                color: $color-yellow;
+              }
+            }
+          }
+        }
+        .favourite {
+          float: right;
+          height: 100%;
+          .fa-heart-o {
+            color: $color-dark-grey;
+          }
+          .fa-heart {
+            color: $color-red;
+          }
+        }
+      }
+    }
+  }
+}

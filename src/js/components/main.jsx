@@ -1,6 +1,8 @@
 import React from 'react';
 import Card from './card';
 
+import './../../scss/components/main.scss';
+
 class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -10,7 +12,7 @@ class Main extends React.Component {
 
   render() {
     const cards = this.props.content.map((card) => {
-      return <Card key={card.id} image={card.image} title={card.title} url={card.url} category={card.category} />;
+      return <Card key={card.id} image={card.image} title={card.title} url={card.url} category={card.category} rating={card.rating} />;
     });
 
     return (
@@ -24,7 +26,7 @@ class Main extends React.Component {
 }
 
 Main.propTypes = {
-  content: React.PropTypes.string.isRequired,
+  content: React.PropTypes.array.isRequired,
 };
 
 export default Main;

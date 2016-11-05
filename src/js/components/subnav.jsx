@@ -2,6 +2,7 @@ import React from 'react';
 import Select from 'react-select';
 
 import 'react-select/dist/react-select.css';
+import './../../scss/components/subnav.scss';
 
 const dateOptions = [
   { value: 'one', label: 'Last week' },
@@ -41,7 +42,7 @@ class Subnav extends React.Component {
 
   render() {
     return (
-      <section className="top">
+      <section className="subnav">
         <div className="columns small-2">
           <Select
             name="date-field"
@@ -84,8 +85,8 @@ class Subnav extends React.Component {
         </div>
         <div className="columns small-4">
           <span className="layout float--right">
-            <i className="fa fa-th push--right" />
-            <i className="fa fa-bars" />
+            <img src="./../img/grid.svg" role="presentation" className="push--right" />
+            <img src="./../img/list.svg" role="presentation" />
           </span>
         </div>
       </section>

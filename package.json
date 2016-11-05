@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "./node_modules/.bin/webpack-dev-server --content-base src --inline --hot",
     "build": "webpack",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kevin Østerkilde <kevin@oesterkilde.dk> (http://oesterkilde.dk/)",
@@ -19,6 +20,7 @@
     "font-awesome-webpack": "0.0.4",
     "foundation-sites": "^6.2.4",
     "jquery": "^3.1.1",
+    "js": "^0.1.0",
     "json-loader": "^0.5.4",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
@@ -31,6 +33,7 @@
     "react-foundation": "^0.7.0",
     "react-router": "^3.0.0",
     "react-select": "^1.0.0-rc.2",
+    "react-star-rating-component": "^1.2.2",
     "sass-import-modules": "^2.1.0",
     "scss": "^0.2.4",
     "svg-url-loader": "^1.1.0",
@@ -56,6 +59,7 @@
     "eslint-plugin-import": "^1.16.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.4.1",
+    "gh-pages": "^0.11.0",
     "html-webpack-plugin": "^2.24.0",
     "node-sass": "^3.10.1",
     "postcss-loader": "^1.1.0",

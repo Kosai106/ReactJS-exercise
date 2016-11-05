@@ -1,0 +1,6 @@
+@mixin text-align($direction) {
+  text-align: $direction !important;
+}
+.text--center { @include text-align(center); }
+.text--left   { @include text-align(left); }
+.text--right  { @include text-align(right); }

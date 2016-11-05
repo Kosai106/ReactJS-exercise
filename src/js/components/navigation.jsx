@@ -1,6 +1,8 @@
 import React from 'react';
 import Dropdown from './navigation/dropdown';
 
+import './../../scss/components/navigation.scss';
+
 class Navigation extends React.Component {
   constructor(props) {
     super(props);
@@ -20,10 +22,10 @@ class Navigation extends React.Component {
         </div>
         <div className="columns small-9">
           <div className="row push-half--top chamber-none--sides">
-            <div className="columns small-4 medium-6 large-8 xlarge-8 xxlarge-8 push--none">
+            <div className="columns small-4 medium-6 large-8 xlarge-8 xxlarge-8 push--none search--container">
               <input className="search" placeholder="Search..." />
             </div>
-            <div className="columns small-8 medium-6 large-4 xlarge-4 xxlarge-4 push--none">
+            <div className="columns small-8 medium-6 large-4 xlarge-4 xxlarge-4">
               <Dropdown />
               <a className="cta float--right" href="#zzz">
                 Upload content

@@ -1,11 +1,21 @@
 import React from 'react';
+import StarRatingComponent from 'react-star-rating-component';
+
+import './../../scss/components/card.scss';
 
 class Card extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       liked: false,
+      rating: this.props.rating || 0,
     };
+  }
+
+  onStarClick(nextValue) {
+    this.setState({
+      rating: nextValue,
+    });
   }
   toggleLiked() {
     this.setState({
@@ -20,9 +30,24 @@ class Card extends React.Component {
           <div className="container">
             <img src={this.props.image} alt={this.props.category} />
             <div className="details">
-              <div className="title">{this.props.title}</div>
-              <div className="favourite">
-                <i onClick={(e) => { this.toggleLiked(e); }} className={buttonClass} />
+              <div className="top">
+                <div className="title">{this.props.title}</div>
+              </div>
+              <div className="bottom">
+                <div className="rating">
+                  <StarRatingComponent
+                    name="Card"
+                    starCount={5}
+                    value={this.state.rating}
+                    onStarClick={(e) => { this.onStarClick(e); }}
+                    renderStarIcon={(index, value) => {
+                      return <i className={index <= value ? 'fa fa-star' : 'fa fa-star-o'} />;
+                    }}
+                  />
+                </div>
+                <div className="favourite">
+                  <i onClick={(e) => { this.toggleLiked(e); }} className={buttonClass} />
+                </div>
               </div>
             </div>
           </div>
@@ -33,11 +58,12 @@ class Card extends React.Component {
 }
 
 Card.propTypes = {
-  id: React.PropTypes.number.isRequired,
-  title: React.PropTypes.string.isRequired,
+  id: React.PropTypes.number,
+  title: React.PropTypes.string,
   image: React.PropTypes.string.isRequired,
-  url: React.PropTypes.string.isRequired,
-  category: React.PropTypes.string.isRequired,
+  url: React.PropTypes.string,
+  category: React.PropTypes.string,
+  rating: React.PropTypes.number,
 };
 
 export default Card;

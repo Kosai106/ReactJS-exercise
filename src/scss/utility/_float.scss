@@ -1,0 +1,6 @@
+.float--right {
+  float: map-get($alignments, right);
+}
+.float--left {
+  float: map-get($alignments, left);
+}

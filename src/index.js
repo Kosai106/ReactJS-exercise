@@ -1,12 +1,12 @@
 import jQuery from 'jquery';
 
 window.jQuery = jQuery;
+require('./../node_modules/foundation-sites/dist/foundation.js');
 
-jQuery(document).ready(function($) {
+jQuery(document).ready(($) => {
   $(document).foundation();
 });
 
-require('./../node_modules/foundation-sites/dist/foundation.js');
-const component = require('./js/app.jsx');
-
-document.body.appendChild(component());
+document.body.appendChild(
+  require('./js/app.jsx')
+);
