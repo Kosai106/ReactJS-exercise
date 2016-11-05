@@ -1,99 +1,127 @@
 [{
   "id": 1,
+  "guid": "7ad58f79-24d9-4b7c-a2dd-d7d497d1fa80",
   "title": "Explore Your World",
   "image": "https://d13yacurqjgara.cloudfront.net/users/85668/screenshots/2381986/cruise.me2.jpg",
   "url": "#1",
   "category": "Design",
-  "rating": 5
+  "rating": 5,
+  "liked": true
 }, {
   "id": 2,
+  "guid": "e49571ff-82f2-42f3-9aa1-7c1a7d730516",
   "title": "Evolve UI Kit",
   "image": "https://d13yacurqjgara.cloudfront.net/users/107759/screenshots/3049006/evolve.png",
   "url": "#2",
   "category": "Design",
-  "rating": 2
+  "rating": 2,
+  "liked": false
 }, {
   "id": 3,
+  "guid": "4ac3d642-897b-4a18-9cdf-6fe57ff45ace",
   "title": "CQ magazine cover",
   "image": "https://d13yacurqjgara.cloudfront.net/users/36927/screenshots/3024324/wick_mag_cover.jpg",
   "url": "#3",
   "category": "Mockup",
-  "rating": 3
+  "rating": 3,
+  "liked": true
 }, {
   "id": 4,
+  "guid": "6c5c586c-d5fc-4436-8760-47d0108f3745",
   "title": "Facebook in material design",
   "image": "https://d13yacurqjgara.cloudfront.net/users/257709/screenshots/2958133/facebook_800x600_v2.png",
   "url": "#4",
   "category": "Mockup",
-  "rating": 1
+  "rating": 1,
+  "liked": false
 }, {
   "id": 5,
+  "guid": "52288494-9d56-4299-baa9-03090ebee9e3",
   "title": "UI Style Guide 2.0",
   "image": "https://d13yacurqjgara.cloudfront.net/users/104062/screenshots/3060655/optimize___styleguide_2.png",
   "url": "#5",
   "category": "Brand",
-  "rating": 5
+  "rating": 5,
+  "liked": true
 }, {
   "id": 6,
+  "guid": "76fc4fd3-31aa-49e0-829e-618f38058b86",
   "title": "Support Site",
   "image": "https://d13yacurqjgara.cloudfront.net/users/703713/screenshots/3060593/_166.png",
   "url": "#6",
   "category": "Design",
-  "rating": 3
+  "rating": 3,
+  "liked": false
 }, {
   "id": 7,
+  "guid": "6b04d5f7-7322-4f20-b335-0470319d5207",
   "title": "Intellirent Properties Cards",
   "image": "https://d13yacurqjgara.cloudfront.net/users/92629/screenshots/2976686/properties2.png",
   "url": "#7",
   "category": "Application",
-  "rating": 2
+  "rating": 2,
+  "liked": true
 }, {
   "id": 8,
+  "guid": "ebce3ad9-304e-40d0-9287-4dbfbad0dbc4",
   "title": "Studies Center Layout",
   "image": "https://d13yacurqjgara.cloudfront.net/users/258493/screenshots/2213892/dribbble.jpg",
   "url": "#8",
   "category": "Application",
-  "rating": 5
+  "rating": 5,
+  "liked": false
 }, {
   "id": 9,
+  "guid": "e0d0e084-1b70-409d-97f9-4c58083e382c",
   "title": "Online Music Streaming Service - Artist Page",
   "image": "https://d13yacurqjgara.cloudfront.net/users/1129918/screenshots/2729032/ng-artist-page.jpg",
   "url": "#9",
   "category": "Application",
-  "rating": 1
+  "rating": 1,
+  "liked": true
 }, {
   "id": 10,
+  "guid": "f29919b2-24bb-4201-a1f1-5c547dbfa16d",
   "title": "Airbnb Responsive : Listings",
   "image": "https://d13yacurqjgara.cloudfront.net/users/40433/screenshots/2363692/open-uri20151120-3-33aeqh",
   "url": "#10",
   "category": "Application",
-  "rating": 3
+  "rating": 3,
+  "liked": true
 }, {
   "id": 11,
+  "guid": "6f423313-ed4a-447a-8ea8-092fbd674128",
   "title": "App wireframes in progress",
   "image": "https://d13yacurqjgara.cloudfront.net/users/22917/screenshots/1719726/img_107.png",
   "url": "#11",
   "category": "Mockup",
-  "rating": 4
+  "rating": 4,
+  "liked": false
 }, {
   "id": 12,
+  "guid": "8d883aa9-f6a9-4012-82fb-a0adce722e88",
   "title": "Sketchapp redesign",
   "image": "https://d13yacurqjgara.cloudfront.net/users/257709/screenshots/2927199/skech-50_.png",
   "url": "#12",
   "category": "Mockup",
-  "rating": 1
+  "rating": 1,
+  "liked": true
 }, {
   "id": 13,
+  "guid": "506de288-e87a-4f46-904b-a6f613564f59",
   "title": "Elm calendar day",
   "image": "https://d13yacurqjgara.cloudfront.net/users/86723/screenshots/3066627/elm_calendar_day.png",
   "url": "#13",
   "category": "Mockup",
-  "rating": 5
+  "rating": 5,
+  "liked": false
 }, {
   "id": 14,
+  "guid": "f8896aa0-a06b-4ed3-a057-f5c4be1dacff",
   "title": "Adobe Xd — Onshore App Design",
   "image": "https://d13yacurqjgara.cloudfront.net/users/3132/screenshots/3066583/onshore.jpg",
   "url": "#14 ",
   "category": "Mockup",
-  "rating": 3
+  "rating": 3,
+  "liked": false
 }]

@@ -12,7 +12,7 @@ class Main extends React.Component {
 
   render() {
     const cards = this.props.content.map((card) => {
-      return <Card key={card.id} image={card.image} title={card.title} url={card.url} category={card.category} rating={card.rating} />;
+      return <Card key={card.id} guid={card.guid} image={card.image} title={card.title} url={card.url} category={card.category} rating={card.rating} liked={card.liked} />;
     });
 
     return (
