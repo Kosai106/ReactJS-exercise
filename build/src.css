@@ -1441,6 +1441,11 @@ a.menu:hover {
     height: auto; }
     .subnav .columns .layout {
       margin-top: 4px; }
+      .subnav .columns .layout .btn {
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none; }
 @charset "UTF-8";
 /**
  * Foundation for Sites by ZURB
