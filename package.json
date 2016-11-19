@@ -1,16 +1,20 @@
 {
   "name": "app",
   "version": "1.0.0",
-  "description": "",
+  "description": "A React single-page application to learn myself React-Router and potentially Redux.",
   "main": "webpack.config.js",
   "scripts": {
     "dev": "./node_modules/.bin/webpack-dev-server --content-base src --inline --hot",
     "build": "webpack",
-    "deploy": "gh-pages -d build",
+    "deploy": "webpack && gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kevin Østerkilde <kevin@oesterkilde.dk> (http://oesterkilde.dk/)",
   "license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Kosai106/ReactJS-exercise.git"
+	},
   "dependencies": {
     "all": "0.0.0",
     "autoprefixer": "^6.5.1",
