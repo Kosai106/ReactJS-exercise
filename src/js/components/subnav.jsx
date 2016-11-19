@@ -33,65 +33,79 @@ const ratingOptions = [
   { value: 'five', label: '5 stars' },
 ];
 
-class Subnav extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    };
-  }
+export default class Subnav extends React.Component {
+	constructor(props) {
+		super(props);
+		this.toggleGrid = this.toggleGrid.bind(this);
+		this.state = {
+			gridToggled: false,
+		};
+	}
 
-  render() {
-    return (
-      <section className="subnav">
-        <div className="columns small-2">
-          <Select
+	toggleGrid() {
+		this.setState({
+			gridToggled: !this.state.gridToggled,
+		});
+	}
+
+	render() {
+		const grid = this.state.gridToggled; const Console = console;
+		if (grid) {
+			Console.log(`if ${grid}, display cards as a list`);
+		} else {
+			Console.log(`if ${grid}, display cards as a grid`);
+		}
+
+		return (
+			<section className="subnav">
+				<div className="columns small-2">
+					<Select
             name="date-field"
             value={this.state.dateSelection}
             placeholder="Date"
             options={dateOptions}
             clearable={true}
             searchable={false}
-          />
-        </div>
-        <div className="columns small-2">
-          <Select
+					/>
+				</div>
+				<div className="columns small-2">
+					<Select
             name="category-field"
             value={this.state.categorySelection}
             placeholder="Category"
             options={categoryOptions}
             clearable={true}
             searchable={false}
-          />
-        </div>
-        <div className="columns small-2">
-          <Select
-            name="popularity-field"
+					/>
+				</div>
+				<div className="columns small-2">
+					<Select
+						name="popularity-field"
             value={this.state.popularitySelection}
             placeholder="Sorting"
             options={popularityOptions}
             clearable={false}
             searchable={false}
-          />
-        </div>
-        <div className="columns small-2">
-          <Select
+					/>
+				</div>
+				<div className="columns small-2">
+					<Select
             name="rating-field"
             value={this.state.ratingSelection}
             placeholder="Rating"
             options={ratingOptions}
             clearable={false}
             searchable={false}
-          />
-        </div>
-        <div className="columns small-4">
-          <span className="layout float--right">
-            <img src="./../img/grid.svg" role="presentation" className="push--right" />
-            <img src="./../img/list.svg" role="presentation" />
-          </span>
-        </div>
-      </section>
-    );
-  }
+					/>
+				</div>
+				<div className="columns small-4">
+					<span className="layout float--right">
+						{this.state.gridToggled ? (<div className="btn btn--absolute btn--primary" onClick={this.toggleGrid}><img src="./../img/grid.svg" role="presentation" /></div>)
+																		: (<div className="btn btn--absolute btn--primary" onClick={this.toggleGrid}><img src="./../img/list.svg" role="presentation" /></div>)
+						}
+					</span>
+				</div>
+			</section>
+		);
+	}
 }
-
-export default Subnav;
