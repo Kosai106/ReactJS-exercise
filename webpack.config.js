@@ -18,7 +18,7 @@ module.exports = {
 	},
 	output: {
 		path: PATHS.build,
-		publicPath: '/ReactJS-exercise/', // Uncomment this when deploying to GH-Pages
+		// publicPath: '/ReactJS-exercise/', // Uncomment this when deploying to GH-Pages
 		filename: '[name].js',
 	},
 	devtool: debug ? 'inline-sourcemap' : null,
