@@ -11,12 +11,14 @@ export default class Main extends React.Component {
 	}
 
 	render() {
+		const gridToggle = this.props.style ? 'scroll list' : 'scroll grid';
+
 		const cards = this.props.content.map((card) => {
 			return <Card key={card.id} guid={card.guid} image={card.image} title={card.title} url={card.url} category={card.category} rating={card.rating} liked={card.liked} />;
 		});
 
 		return (
-			<div className="scroll">
+			<div className={gridToggle}>
 				<div className="row bottom">
 					{cards}
 				</div>
@@ -27,4 +29,5 @@ export default class Main extends React.Component {
 
 Main.propTypes = {
 	content: React.PropTypes.array.isRequired,
+	style: React.PropTypes.bool.isRequired,
 };

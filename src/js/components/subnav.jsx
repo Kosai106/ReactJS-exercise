@@ -36,26 +36,11 @@ const ratingOptions = [
 export default class Subnav extends React.Component {
 	constructor(props) {
 		super(props);
-		this.toggleGrid = this.toggleGrid.bind(this);
 		this.state = {
-			gridToggled: false,
 		};
 	}
 
-	toggleGrid() {
-		this.setState({
-			gridToggled: !this.state.gridToggled,
-		});
-	}
-
 	render() {
-		const grid = this.state.gridToggled; const Console = console;
-		if (grid) {
-			Console.log(`if ${grid}, display cards as a list`);
-		} else {
-			Console.log(`if ${grid}, display cards as a grid`);
-		}
-
 		return (
 			<section className="subnav">
 				<div className="columns small-2">
@@ -100,8 +85,8 @@ export default class Subnav extends React.Component {
 				</div>
 				<div className="columns small-4">
 					<span className="layout float--right">
-						{this.state.gridToggled ? (<div className="btn btn--absolute btn--primary" onClick={this.toggleGrid}><img src="./../img/grid.svg" role="presentation" /></div>)
-																		: (<div className="btn btn--absolute btn--primary" onClick={this.toggleGrid}><img src="./../img/list.svg" role="presentation" /></div>)
+						{this.props.toggle ? (<div className="btn btn--absolute btn--primary chamber--right" onClick={this.props.handleGrid}><img src="./../img/grid.svg" role="presentation" /></div>)
+															: (<div className="btn btn--absolute btn--primary chamber--right" onClick={this.props.handleGrid}><img src="./../img/list.svg" role="presentation" /></div>)
 						}
 					</span>
 				</div>
@@ -109,3 +94,8 @@ export default class Subnav extends React.Component {
 		);
 	}
 }
+
+Subnav.propTypes = {
+	toggle: React.PropTypes.bool,
+	handleGrid: React.PropTypes.func,
+};

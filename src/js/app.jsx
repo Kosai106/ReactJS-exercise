@@ -1,13 +1,15 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Router, Route, browserHistory } from 'react-router';
+import { Router, Route, Link, hashHistory } from 'react-router';
 import All from './all';
-
-const Routes = (
-	<Route path="*" component={All} />
-);
+import Test from './test';
 
 render(
-	<Router history={browserHistory} routes={Routes} />,
+	(
+		<Router history={hashHistory}>
+			<Route path="/" component={All} />
+			<Route path="event/:url" component={Test} />
+		</Router>
+	),
   document.getElementById('app')
 );

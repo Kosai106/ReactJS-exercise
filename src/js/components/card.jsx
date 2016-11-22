@@ -28,7 +28,7 @@ export default class Card extends React.Component {
 
 		return (
 			<div className="columns small-12 medium-6 large-4 xlarge-3 card" key={this.props.id}>
-				<a href={this.props.url}>
+				<a href={`#/event/${this.props.url}`}>
 					<div className="container">
 						<img src={this.props.image} alt={this.props.category} />
 						<div className="details">
