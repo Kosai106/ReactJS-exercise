@@ -2477,6 +2477,8 @@
     .scroll.list .row .card a .container img {
       height: 125px;
       width: 125px; }
+    .scroll.list .row .card a .container .details {
+      width: 100%; }
 .chamber--top {
   margin-top: 14px !important; }
 
