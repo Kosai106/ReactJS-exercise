@@ -2457,17 +2457,9 @@
           .scroll .row .card a .details .bottom .rating .dv-star-rating .dv-star-rating-star {
             font-size: 1em;
             margin-left: 0; }
-            .scroll .row .card a .details .bottom .rating .dv-star-rating .dv-star-rating-star .fa-star-o {
-              color: #2A2D33; }
-            .scroll .row .card a .details .bottom .rating .dv-star-rating .dv-star-rating-star .fa-star {
-              color: #F8E71C; }
         .scroll .row .card a .details .bottom .favourite {
           float: right;
           height: 100%; }
-          .scroll .row .card a .details .bottom .favourite .fa-heart-o {
-            color: #2A2D33; }
-          .scroll .row .card a .details .bottom .favourite .fa-heart {
-            color: #FF6060; }
 
 .scroll.list .row .card {
   width: 100% !important;
@@ -2483,6 +2475,9 @@
       width: 125px; }
     .scroll.list .row .card a .container .details {
       width: 100%; }
+      .scroll.list .row .card a .container .details img {
+        width: auto;
+        height: auto; }
 .chamber--top {
   margin-top: 14px !important; }
 
@@ -2880,10 +2875,7 @@
   text-indent: 14px;
   border: 1px solid #CCC;
   border-radius: 4px;
-  background-image: url(d8fb569575d225307b0b6eccbf7163f0.svg);
-  background-repeat: no-repeat;
-  background-position: 98% 50%;
-  background-color: #FFFFFF;
+  background: #FFFFFF url("/img/search.svg") no-repeat 98% 50%;
   color: #2A2D33; }
   .search::-webkit-input-placeholder {
     color: #AAA; }
