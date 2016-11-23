@@ -1,12 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
-    <title>grid</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-3" transform="translate(-28.000000, -3.000000)" fill="#2A2D33">
-            <path d="M28,3 L35,3 L35,10 L28,10 L28,3 Z M28,12 L35,12 L35,19 L28,19 L28,12 Z M37,3 L44,3 L44,10 L37,10 L37,3 Z M37,12 L44,12 L44,19 L37,19 L37,12 Z" id="grid"></path>
-        </g>
-    </g>
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <title>
+    grid
+  </title>
+  <path d="M0 0h7v7H0V0zm0 9h7v7H0V9zm9-9h7v7H9V0zm0 9h7v7H9V9z" fill="#2A2D33" fill-rule="evenodd"/>
 </svg>
