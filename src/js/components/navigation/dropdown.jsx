@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 export default class Dropdown extends React.Component {
 	constructor(props) {
@@ -22,22 +23,22 @@ export default class Dropdown extends React.Component {
 				</div>
 				<ul className="dropdown-pane menu vertical" data-close-on-click="true" data-dropdown="" id="example-dropdown">
 					<li>
-						<a className="menu" href="#zzz">
+						<Link to="/user/profile" className="menu">
 							<i className="fa fa-user" />
               Profile
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a className="menu" href="#zzz">
+						<Link to="/user/settings" className="menu">
 							<i className="fa fa-cog" />
-							Settings
-						</a>
+              Settings
+						</Link>
 					</li>
 					<li>
-						<a className="menu" href="#zzz">
+						<Link to="/user/signout" className="menu">
 							<i className="fa fa-sign-out" />
-							Logout
-						</a>
+              Profile
+						</Link>
 					</li>
 				</ul>
 			</div>

@@ -10,9 +10,9 @@ import Subnav from './components/subnav';
 
 import './../scss/application.scss';
 
-const data = require('!json!./../json/data.json');
+const data = require('!json!./../json/data.json'); // Ignore linter error
 
-class All extends React.Component {
+export default class All extends React.Component {
 	constructor(props) {
 		super(props);
 		this.toggleGrid = this.toggleGrid.bind(this);
@@ -45,5 +45,3 @@ class All extends React.Component {
 		);
 	}
 }
-
-export default All;

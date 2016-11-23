@@ -14,7 +14,7 @@ export default class Main extends React.Component {
 		const gridToggle = this.props.style ? 'scroll list' : 'scroll grid';
 
 		const cards = this.props.content.map((card) => {
-			return <Card key={card.id} guid={card.guid} image={card.image} title={card.title} url={card.url} category={card.category} rating={card.rating} liked={card.liked} />;
+			return <Card key={card.id} guid={card.guid} image={card.image} title={card.title} category={card.category} rating={card.rating} liked={card.liked} />;
 		});
 
 		return (

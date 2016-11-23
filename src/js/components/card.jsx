@@ -17,18 +17,23 @@ export default class Card extends React.Component {
 			rating: nextValue,
 		});
 	}
-	toggleLiked() {
+	toggleLiked(e) {
 		this.setState({
 			liked: !this.state.liked,
 		});
+		e.preventDefault(); // Prevents accidenttally going to the event page when favouriting.
 	}
 
 	render() {
-		const likedClass = this.state.liked ? 'fa fa-heart' : 'fa fa-heart-o';
+		const starFull = <img role="presentation" src="./img/star-full.svg" />;
+		const starEmpty = <img role="presentation" src="./img/star-empty.svg" />;
+
+
+		const likedClass = this.state.liked ? './img/heart-full.svg' : './img/heart-empty.svg';
 
 		return (
 			<div className="columns small-12 medium-6 large-4 xlarge-3 card" key={this.props.id}>
-				<a href={`#/event/${this.props.url}`}>
+				<a href={`event/${this.props.guid}/`}>
 					<div className="container">
 						<img src={this.props.image} alt={this.props.category} />
 						<div className="details">
@@ -42,11 +47,14 @@ export default class Card extends React.Component {
                     starCount={5}
                     value={this.state.rating}
                     onStarClick={(e) => { this.onStarClick(e); }}
-                    renderStarIcon={(index, value) => { return <i className={index <= value ? 'fa fa-star' : 'fa fa-star-o'} />; }}
+										renderStarIcon={(index, value) => {
+											return index <= value ? starFull
+																						: starEmpty;
+										}}
 									/>
 								</div>
 								<div className="favourite">
-									<i onClick={(e) => { this.toggleLiked(e); }} className={likedClass} />
+									<img onClick={(e) => { this.toggleLiked(e); }} role="presentation" src={likedClass} />
 								</div>
 							</div>
 						</div>
@@ -62,7 +70,6 @@ Card.propTypes = {
 	guid: React.PropTypes.string,
 	title: React.PropTypes.string,
 	image: React.PropTypes.string.isRequired,
-	url: React.PropTypes.string,
 	category: React.PropTypes.string,
 	rating: React.PropTypes.number,
 	liked: React.PropTypes.bool,

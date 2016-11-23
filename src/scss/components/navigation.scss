@@ -11,10 +11,7 @@
   text-indent: 14px;
   border: 1px solid #CCC;
   border-radius: 4px;
-  background-image: url('./../../img/search.svg');
-  background-repeat: no-repeat;
-  background-position: 98% 50%;
-  background-color: $color-white;
+	background: $color-white url('~/img/search.svg') no-repeat 98% 50%;
   color: $color-dark-grey;
   &::placeholder {
     color: #AAA;

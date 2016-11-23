@@ -33,6 +33,10 @@
 		      display: flex;
 		      flex-direction: column;
 		      justify-content: space-between;
+					img {
+						width: auto;
+						height: auto;
+					}
 		      .top {
 		        width: 100%;
 		        .title {
@@ -56,24 +60,14 @@
 		            .dv-star-rating-star {
 		              font-size: 1em;
 		              margin-left: 0;
-		              .fa-star-o {
-		                color: $color-dark-grey;
-		              }
-		              .fa-star {
-		                color: $color-yellow;
-		              }
+									line-height: 1.4;
 		            }
 		          }
 		        }
 		        .favourite {
 		          float: right;
 		          height: 100%;
-		          .fa-heart-o {
-		            color: $color-dark-grey;
-		          }
-		          .fa-heart {
-		            color: $color-red;
-		          }
+							line-height: 1.5;
 		        }
 		      }
 		    }
@@ -88,6 +82,7 @@
 			width: 100% !important;
 			max-width: 100% !important;
 			min-width: 100% !important;
+			padding: (.9375rem/3) .9375rem;
 		  a {
 		    .container {
 					display: flex;
@@ -95,6 +90,16 @@
 		        height: 125px;
 		        width: 125px;
 		      }
+					.details {
+						width: 100%;
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						img {
+							width: auto;
+							height: auto;
+						}
+					}
 		    }
 			}
 		}
