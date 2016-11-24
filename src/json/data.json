@@ -1,127 +1,270 @@
 [{
+  "id": 0,
+  "guid": "deddab74-5103-4aa1-ab27-8e0e31f84137",
+  "title": "GeekTyper Detail",
+	"desciption": "Just a shot from GeekTyper.com development on my trusty old ThinkPad. More examples of \"hacker\" kind of UI on the website!",
+  "image": "https://d13yacurqjgara.cloudfront.net/users/27534/screenshots/3092572/geektyper_-_copy.png",
+  "url": "https://dribbble.com/shots/3092572-GeekTyper-Detail",
+  "category": "Design",
+  "rating": 4,
+  "liked": false,
+	"tags": [
+		"design",
+		"typography"
+	]
+}, {
   "id": 1,
   "guid": "7ad58f79-24d9-4b7c-a2dd-d7d497d1fa80",
-  "title": "Explore Your World",
+  "title": "Cruise.Me // Live",
+	"desciption": "Another shot from the Cruise.me project. Cruise.me is a cruise booking site that turns booking a cruise into an interactive, intuitive and enjoyable process.",
   "image": "https://d13yacurqjgara.cloudfront.net/users/85668/screenshots/2381986/cruise.me2.jpg",
-  "url": "first",
+  "url": "https://dribbble.com/shots/2381986-Cruise-Me-Live",
   "category": "Design",
   "rating": 5,
-  "liked": true
+  "liked": true,
+	"tags": [
+		"design",
+		"web",
+		"ui"
+	]
 }, {
   "id": 2,
   "guid": "e49571ff-82f2-42f3-9aa1-7c1a7d730516",
   "title": "Evolve UI Kit",
+	"desciption": "A hot new UI Kit for Sketch at UI8.",
   "image": "https://d13yacurqjgara.cloudfront.net/users/107759/screenshots/3049006/evolve.png",
-  "url": "second",
+  "url": "https://dribbble.com/shots/3049006-Evolve-UI-Kit",
   "category": "Design",
   "rating": 2,
-  "liked": false
+  "liked": false,
+	"tags": [
+		"design",
+		"web",
+		"ui"
+	]
 }, {
   "id": 3,
   "guid": "4ac3d642-897b-4a18-9cdf-6fe57ff45ace",
   "title": "CQ magazine cover",
+	"desciption": "This was a magazine cover done to promote John Wick 2 movie. Continental Quarterly is timeless style for the modern assassin.",
   "image": "https://d13yacurqjgara.cloudfront.net/users/36927/screenshots/3024324/wick_mag_cover.jpg",
-  "url": "third",
+  "url": "https://dribbble.com/shots/3024324-CQ-magazine-cover",
   "category": "Mockup",
   "rating": 3,
-  "liked": true
+  "liked": true,
+	"tags": [
+		"design",
+		"web",
+		"ui"
+	]
 }, {
   "id": 4,
   "guid": "6c5c586c-d5fc-4436-8760-47d0108f3745",
   "title": "Facebook in material design",
+	"desciption": "",
   "image": "https://d13yacurqjgara.cloudfront.net/users/257709/screenshots/2958133/facebook_800x600_v2.png",
-  "url": "fourth",
+  "url": "https://dribbble.com/shots/2958133-Facebook-in-material-design",
   "category": "Mockup",
   "rating": 1,
-  "liked": false
+  "liked": false,
+	"tags": [
+		"design",
+		"web",
+		"ui"
+	]
 }, {
   "id": 5,
   "guid": "52288494-9d56-4299-baa9-03090ebee9e3",
   "title": "UI Style Guide 2.0",
+	"desciption": "We've been busy working on revamping our style guide to bring it up to speed with all of the exciting projects we're working on. Still lots to do but making great progress! Here's a sneak peek.",
   "image": "https://d13yacurqjgara.cloudfront.net/users/104062/screenshots/3060655/optimize___styleguide_2.png",
-  "url": "fifth",
+  "url": "https://dribbble.com/shots/3060655-Optimize-UI-Style-Guide-2-0",
   "category": "Brand",
   "rating": 5,
-  "liked": true
+  "liked": true,
+	"tags": [
+		"design",
+		"web",
+		"ui"
+	]
 }, {
   "id": 6,
   "guid": "76fc4fd3-31aa-49e0-829e-618f38058b86",
   "title": "Support Site",
+	"desciption": "This is a new site that we are working for a while. Check the attachment to see the full page. Also can see the project here",
   "image": "https://d13yacurqjgara.cloudfront.net/users/703713/screenshots/3060593/_166.png",
-  "url": "sixth",
+  "url": "https://dribbble.com/shots/3060593-Support-Site",
   "category": "Design",
   "rating": 3,
-  "liked": false
+  "liked": false,
+	"tags": [
+		"design",
+		"web",
+		"ui"
+	]
 }, {
   "id": 7,
   "guid": "6b04d5f7-7322-4f20-b335-0470319d5207",
   "title": "Intellirent Properties Cards",
+	"desciption": "Today I want to show you our next part of the journey. Properties cards, for easy and quick comparison of different amazing places to rent.",
   "image": "https://d13yacurqjgara.cloudfront.net/users/92629/screenshots/2976686/properties2.png",
-  "url": "seventh",
+  "url": "https://dribbble.com/shots/2976686-Intellirent-Properties-Cards",
   "category": "Application",
   "rating": 2,
-  "liked": true
+  "liked": true,
+	"tags": [
+		"design",
+		"web",
+		"ui"
+	]
 }, {
   "id": 8,
   "guid": "ebce3ad9-304e-40d0-9287-4dbfbad0dbc4",
-  "title": "Studies Center Layout",
-  "image": "https://d13yacurqjgara.cloudfront.net/users/258493/screenshots/2213892/dribbble.jpg",
-  "url": "eight",
+  "title": "Events & Groups",
+	"desciption": "Some shots of Welbe, a health and wellness app I'm working on for OC Tanner.",
+  "image": "https://d13yacurqjgara.cloudfront.net/users/137531/screenshots/3115190/welbestuff.jpg",
+  "url": "https://dribbble.com/shots/3115190-Events-Groups",
   "category": "Application",
-  "rating": 5,
-  "liked": false
+  "rating": 4,
+  "liked": false,
+	"tags": [
+		"design",
+		"web",
+		"ui"
+	]
 }, {
   "id": 9,
   "guid": "e0d0e084-1b70-409d-97f9-4c58083e382c",
   "title": "Online Music Streaming Service - Artist Page",
+	"desciption": "We're on our way to create (hope so!) the most beautiful and usable music streaming service design. Here's an artist page.",
   "image": "https://d13yacurqjgara.cloudfront.net/users/1129918/screenshots/2729032/ng-artist-page.jpg",
-  "url": "ninth",
+  "url": "https://dribbble.com/shots/2729032-Online-Music-Streaming-Service-Artist-Page",
   "category": "Application",
   "rating": 1,
-  "liked": true
+  "liked": true,
+	"tags": [
+		"design",
+		"web",
+		"ui"
+	]
 }, {
   "id": 10,
   "guid": "f29919b2-24bb-4201-a1f1-5c547dbfa16d",
   "title": "Airbnb Responsive : Listings",
+	"desciption": "We helped Airbnb last year, making their newly rebranded site fully responsive. Note that we did not design the original site, that was done in-house by the great team at Airbnb. Our role was to work with them on responsive designs and responsive strategy.",
   "image": "https://d13yacurqjgara.cloudfront.net/users/40433/screenshots/2363692/open-uri20151120-3-33aeqh",
-  "url": "tenth",
+  "url": "https://dribbble.com/shots/2363692-Airbnb-Responsive-Listings",
   "category": "Application",
   "rating": 3,
-  "liked": true
+  "liked": true,
+	"tags": [
+		"design",
+		"web",
+		"ui"
+	]
 }, {
   "id": 11,
   "guid": "6f423313-ed4a-447a-8ea8-092fbd674128",
   "title": "App wireframes in progress",
+	"desciption": "An app I'm working while not working full time. Here is an early stage of wireframing, designing, still a lot more to do.",
   "image": "https://d13yacurqjgara.cloudfront.net/users/22917/screenshots/1719726/img_107.png",
-  "url": "elleventh",
+  "url": "https://dribbble.com/shots/1719726-App-wireframes-in-progress",
   "category": "Mockup",
   "rating": 4,
-  "liked": false
+  "liked": false,
+	"tags": [
+		"design",
+		"web",
+		"ui"
+	]
 }, {
   "id": 12,
   "guid": "8d883aa9-f6a9-4012-82fb-a0adce722e88",
   "title": "Sketchapp redesign",
+	"desciption": "",
   "image": "https://d13yacurqjgara.cloudfront.net/users/257709/screenshots/2927199/skech-50_.png",
-  "url": "twelvth",
+  "url": "https://dribbble.com/shots/2927199-Sketchapp-redesign",
   "category": "Mockup",
   "rating": 1,
-  "liked": true
+  "liked": true,
+	"tags": [
+		"design",
+		"web",
+		"ui"
+	]
 }, {
   "id": 13,
   "guid": "506de288-e87a-4f46-904b-a6f613564f59",
   "title": "Elm calendar day",
+	"desciption": "",
   "image": "https://d13yacurqjgara.cloudfront.net/users/86723/screenshots/3066627/elm_calendar_day.png",
-  "url": "thirteenth",
+  "url": "https://dribbble.com/shots/3066627-Elm-calendar-day",
   "category": "Mockup",
   "rating": 5,
-  "liked": false
+  "liked": false,
+	"tags": [
+		"design",
+		"web",
+		"ui"
+	]
 }, {
   "id": 14,
   "guid": "f8896aa0-a06b-4ed3-a057-f5c4be1dacff",
   "title": "Adobe Xd — Onshore App Design",
+	"desciption": "Today was a truly epic day. I got to see my work in front of 10,000+ people at Adobe Max's main keynote presentation. I had the honor of working on a surf app concept I called Onshore for Adobe to show off the insane new features of Xd, one of my favorites being the real-time collaboration. I've been a long time Photoshop user, still am, but Adobe Xd definitely has made it so much easier for me to make mobile designs. I'm now 3 apps deep in Xd and never looking back. It's officially added to my tools of choice as a designer.",
   "image": "https://d13yacurqjgara.cloudfront.net/users/3132/screenshots/3066583/onshore.jpg",
-  "url": "fourtheenth",
+  "url": "https://dribbble.com/shots/3066583-Adobe-Xd-Onshore-App-Design",
   "category": "Mockup",
   "rating": 3,
-  "liked": false
+  "liked": false,
+	"tags": [
+		"design",
+		"web",
+		"ui"
+	]
+}, {
+  "id": 15,
+  "guid": "760d4857-8b40-410e-aa3e-117890dd3474",
+  "title": "Dropbox Redesign (Sketch Freebie!)",
+	"desciption": "Hi!! :) I finished this dropbox redesign and I made a design process / tutorial about it: https://youtu.be/k46nr-42Mu0",
+  "image": "https://d13yacurqjgara.cloudfront.net/users/2553/screenshots/2450450/open-uri20160111-3-1i5kilz",
+  "url": "https://dribbble.com/shots/2450450-Dropbox-Redesign-Sketch-Freebie",
+  "category": "Mockup",
+  "rating": 3,
+  "liked": true,
+	"tags": [
+		"design",
+		"web",
+		"ui"
+	]
+}, {
+  "id": 16,
+  "guid": "853f41fd-796d-4b48-a6f1-c743c28e6f3d",
+  "title": "PhotoLytics Dashboard UI",
+	"desciption": "Hey guys, Happy Tuesday! I've been experimenting with various styles for a large dashboard project (more details coming soon). The dashboard consists of a real-time analytics platform of a user's photo stream. Don't forget to check out the real pixels!",
+  "image": "https://d13yacurqjgara.cloudfront.net/users/188162/screenshots/1549923/photolytics.jpg",
+  "url": "https://dribbble.com/shots/1549923-PhotoLytics-Dashboard-UI",
+  "category": "Mockup",
+  "rating": 1,
+  "liked": false,
+	"tags": [
+		"design",
+		"web",
+		"ui"
+	]
+}, {
+  "id": 17,
+  "guid": "f82e42df-0d8c-45f9-b381-b4721a5a27c8",
+  "title": "Dhol",
+	"desciption": "Share and discover music with friends and family. Dhol is the largest online music library anywhere. Millions of songs, albums, and playlists, include the best of Lollywood, Bollywood, bhangra, ghazals & more, with new releases added every day. NOTE: I have done this project for http://1bluemelon.ca",
+  "image": "https://d13yacurqjgara.cloudfront.net/users/33345/screenshots/1538354/dhol.png",
+  "url": "https://dribbble.com/shots/1538354-Dhol",
+  "category": "Mockup",
+  "rating": 4,
+  "liked": false,
+	"tags": [
+		"design",
+		"web",
+		"ui"
+	]
 }]

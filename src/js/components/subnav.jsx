@@ -85,8 +85,8 @@ export default class Subnav extends React.Component {
 				</div>
 				<div className="columns small-4">
 					<span className="layout float--right">
-						{this.props.toggle ? (<div className="btn btn--absolute btn--primary chamber--right" onClick={this.props.handleGrid}><img src="./img/grid.svg" role="presentation" /></div>)
-															: (<div className="btn btn--absolute btn--primary chamber--right" onClick={this.props.handleGrid}><img src="./img/list.svg" role="presentation" /></div>)
+						{	this.props.toggle ? (<div className="btn btn--absolute btn--primary chamber--right" onClick={this.props.handleGrid}><img src="./img/grid.svg" role="presentation" /></div>)
+																: (<div className="btn btn--absolute btn--primary chamber--right" onClick={this.props.handleGrid}><img src="./img/list.svg" role="presentation" /></div>)
 						}
 					</span>
 				</div>

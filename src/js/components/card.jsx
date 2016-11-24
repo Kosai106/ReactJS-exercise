@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 import StarRatingComponent from 'react-star-rating-component';
 
 import './../../scss/components/card.scss';
@@ -25,15 +26,11 @@ export default class Card extends React.Component {
 	}
 
 	render() {
-		const starFull = <img role="presentation" src="./img/star-full.svg" />;
-		const starEmpty = <img role="presentation" src="./img/star-empty.svg" />;
-
-
 		const likedClass = this.state.liked ? './img/heart-full.svg' : './img/heart-empty.svg';
 
 		return (
 			<div className="columns small-12 medium-6 large-4 xlarge-3 card" key={this.props.id}>
-				<a href={`event/${this.props.guid}/`}>
+				<Link to={`event/${this.props.guid}/`}>
 					<div className="container">
 						<img src={this.props.image} alt={this.props.category} />
 						<div className="details">
@@ -48,8 +45,8 @@ export default class Card extends React.Component {
                     value={this.state.rating}
                     onStarClick={(e) => { this.onStarClick(e); }}
 										renderStarIcon={(index, value) => {
-											return index <= value ? starFull
-																						: starEmpty;
+											return index <= value ? <img role="presentation" src="./img/star-full.svg" />
+																						: <img role="presentation" src="./img/star-empty.svg" />;
 										}}
 									/>
 								</div>
@@ -59,7 +56,7 @@ export default class Card extends React.Component {
 							</div>
 						</div>
 					</div>
-				</a>
+				</Link>
 			</div>
 		);
 	}

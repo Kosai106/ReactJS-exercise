@@ -89,15 +89,23 @@
 					img {
 		        height: 125px;
 		        width: 125px;
+						// padding: 14px; // Remove this line to make thumbnail fill container.
 		      }
 					.details {
-						width: 100%;
+						width: calc(100% - 125px);
 						display: flex;
 						flex-direction: row;
 						align-items: center;
+						.top, .bottom {
+							width: 50%;
+						}
+						.top {
+							padding-right: 14px * 2;
+						}
 						img {
 							width: auto;
 							height: auto;
+							padding: initial;
 						}
 					}
 		    }

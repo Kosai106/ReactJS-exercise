@@ -1,7 +1,6 @@
 import React from 'react';
-import 'font-awesome-webpack';
 import 'whatwg-fetch';
-import 'font-awesome/scss/font-awesome.scss';
+import data from '../json/mockaroo.json';
 
 import Main from './components/main';
 import Navigation from './components/navigation';
@@ -9,8 +8,6 @@ import Sidebar from './components/sidebar';
 import Subnav from './components/subnav';
 
 import './../scss/application.scss';
-
-const data = require('!json!./../json/data.json'); // Ignore linter error
 
 export default class All extends React.Component {
 	constructor(props) {
