@@ -11,10 +11,10 @@
   },
   "author": "Kevin Østerkilde <kevin@oesterkilde.dk> (http://oesterkilde.dk/)",
   "license": "ISC",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Kosai106/ReactJS-exercise.git"
-	},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kosai106/ReactJS-exercise.git"
+  },
   "dependencies": {
     "all": "0.0.0",
     "autoprefixer": "^6.5.1",
@@ -33,6 +33,7 @@
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-foundation": "^0.7.0",
+    "react-lazyload": "^2.2.0",
     "react-router": "^3.0.0",
     "react-select": "^1.0.0-rc.2",
     "react-star-rating-component": "^1.2.2",

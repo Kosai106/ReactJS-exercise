@@ -29,7 +29,7 @@ export default class Card extends React.Component {
 		const likedClass = this.state.liked ? './img/heart-full.svg' : './img/heart-empty.svg';
 
 		return (
-			<div className="columns small-12 medium-6 large-4 xlarge-3 card" key={this.props.id}>
+			<div className="columns small-12 medium-6 large-4 xlarge-3 card">
 				<Link to={`event/${this.props.guid}/`}>
 					<div className="container">
 						<img src={this.props.image} alt={this.props.category} />
@@ -40,10 +40,10 @@ export default class Card extends React.Component {
 							<div className="bottom">
 								<div className="rating">
 									<StarRatingComponent
-                    name={this.props.guid}
-                    starCount={5}
-                    value={this.state.rating}
-                    onStarClick={(e) => { this.onStarClick(e); }}
+										name={this.props.guid}
+										starCount={5}
+										value={this.state.rating}
+										onStarClick={(e) => { this.onStarClick(e); }}
 										renderStarIcon={(index, value) => {
 											return index <= value ? <img role="presentation" src="./img/star-full.svg" />
 																						: <img role="presentation" src="./img/star-empty.svg" />;
