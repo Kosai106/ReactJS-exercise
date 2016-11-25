@@ -18,11 +18,12 @@
 		      &:hover {
 		    		box-shadow: 0px 12px 20px 0px rgba(0,0,0,0.10);
 		    	}
-		      img {
+		      img.event {
 		        height: 245px;
 		        width: 100%;
 		        object-fit: cover;
 		        border-radius: 2px 2px 0 0;
+						background-color: $color-light-grey;
 		        &[src=""] {
 		          content: url('https://s-media-cache-ak0.pinimg.com/originals/84/71/e2/8471e2efdd2d3164895748ee8673124d.jpg');
 		        }
@@ -48,6 +49,11 @@
 		            }
 		          }
 		        }
+						.owner {
+							display: none;
+							font-size: .85rem;
+							color: $color-grey;
+						}
 		      }
 		      .bottom {
 		        width: 100%;
@@ -97,15 +103,26 @@
 						flex-direction: row;
 						align-items: center;
 						.top, .bottom {
-							width: 50%;
+							width: auto;
 						}
 						.top {
 							padding-right: 14px * 2;
+							flex-grow: 3;
+							.owner {
+								display: initial;
+							}
 						}
 						img {
 							width: auto;
 							height: auto;
 							padding: initial;
+						}
+						.favourite {
+		          padding-left: 20px;
+							border-left: 1px solid $color-grey;
+		        }
+						.rating {
+							padding-right: 8px;
 						}
 					}
 		    }

@@ -32,10 +32,11 @@ export default class Card extends React.Component {
 			<div className="columns small-12 medium-6 large-4 xlarge-3 card">
 				<Link to={`event/${this.props.guid}/`}>
 					<div className="container">
-						<img src={this.props.image} alt={this.props.category} />
+						<img className="event" src={this.props.image} role="presentation" />
 						<div className="details">
 							<div className="top">
 								<div className="title">{this.props.title}</div>
+								<div className="owner">{this.props.owner}</div>
 							</div>
 							<div className="bottom">
 								<div className="rating">
@@ -63,9 +64,9 @@ export default class Card extends React.Component {
 }
 
 Card.propTypes = {
-	id: React.PropTypes.number,
-	guid: React.PropTypes.string,
-	title: React.PropTypes.string,
+	guid: React.PropTypes.string.isRequired,
+	title: React.PropTypes.string.isRequired,
+	owner: React.PropTypes.string,
 	image: React.PropTypes.string.isRequired,
 	category: React.PropTypes.string,
 	rating: React.PropTypes.number,

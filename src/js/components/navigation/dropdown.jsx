@@ -19,26 +19,17 @@ export default class Dropdown extends React.Component {
 			<div>
 				<div className={this.props.style} data-toggle="example-dropdown" type="button">
 					<span className="chamber-triple--left">{this.props.username}</span>
-					<img className="avatar" src="https://pbs.twimg.com/profile_images/764956033177546758/KurPHCpC_400x400.jpg" role="presentation" />
+					<img className="avatar" src={this.props.image} role="presentation" />
 				</div>
 				<ul className="dropdown-pane menu vertical" data-close-on-click="true" data-dropdown="" id="example-dropdown">
 					<li>
-						<Link to="/user/profile" className="menu">
-							<i className="fa fa-user" />
-              Profile
-						</Link>
+						<Link to="/user/profile" className="menu">Profile</Link>
 					</li>
 					<li>
-						<Link to="/user/settings" className="menu">
-							<i className="fa fa-cog" />
-              Settings
-						</Link>
+						<Link to="/user/settings" className="menu">Settings</Link>
 					</li>
 					<li>
-						<Link to="/user/signout" className="menu">
-							<i className="fa fa-sign-out" />
-              Profile
-						</Link>
+						<Link to="/user/signout" className="menu">Profile</Link>
 					</li>
 				</ul>
 			</div>
@@ -48,5 +39,6 @@ export default class Dropdown extends React.Component {
 
 Dropdown.propTypes = {
 	username: React.PropTypes.string,
+	image: React.PropTypes.string,
 	style: React.PropTypes.string,
 };

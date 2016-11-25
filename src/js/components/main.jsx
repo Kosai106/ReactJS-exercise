@@ -39,11 +39,11 @@ export default class Main extends React.Component {
 					key={card.id}
 					once={true}
 					height={345}
-					offset={[-100, 0]}
+					offset={345}
 					placeholder={<PlaceholderComponent />}
 					overflow
 				>
-					<Card guid={card.guid} image={card.image} title={card.title} category={card.category} rating={card.rating} liked={card.liked} />
+					<Card guid={card.guid} owner={card.owner} image={card.image} title={card.title} category={card.category} rating={card.rating} liked={card.liked} />
 				</LazyLoad>
 			);
 		});

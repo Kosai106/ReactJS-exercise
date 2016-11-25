@@ -1,5 +1,6 @@
 import React from 'react';
 import Select from 'react-select';
+import { filter } from 'lodash';
 
 import 'react-select/dist/react-select.css';
 import './../../scss/components/subnav.scss';
@@ -36,8 +37,44 @@ const ratingOptions = [
 export default class Subnav extends React.Component {
 	constructor(props) {
 		super(props);
+		this.logChangeCategory = this.logChangeCategory.bind(this);
+		this.logChangeRating = this.logChangeRating.bind(this);
+		this.logChangeDate = this.logChangeDate.bind(this);
+		this.logChangePopularity = this.logChangePopularity.bind(this);
 		this.state = {
+			categorySelection: '',
+			ratingSelection: '',
+			dateSelection: '',
+			popularitySelection: '',
 		};
+	}
+
+	logChangeCategory(val) {
+		this.setState({ categorySelection: val });
+	}
+	logChangeRating(val) {
+		this.setState({ ratingSelection: val });
+	}
+	logChangeDate(val) {
+		this.setState({ dateSelection: val });
+	}
+	logChangePopularity(val) {
+		this.setState({ popularitySelection: val });
+	}
+
+	filterPeople() {
+		let search = this.props.content;
+		if (this.state.categorySelection) {
+			search = filter(search, (ppl) => {
+				return ppl.countries.indexOf(this.state.categorySelection) !== -1;
+			});
+		}
+		if (this.state.ratingSelection) {
+			search = filter(search, (ppl) => {
+				return ppl.departments.indexOf(this.state.ratingSelection) !== -1;
+			});
+		}
+		return search;
 	}
 
 	render() {
@@ -49,6 +86,7 @@ export default class Subnav extends React.Component {
             value={this.state.dateSelection}
             placeholder="Date"
             options={dateOptions}
+						onChange={this.logChangeDate}
             clearable={true}
             searchable={false}
 					/>
@@ -59,6 +97,7 @@ export default class Subnav extends React.Component {
             value={this.state.categorySelection}
             placeholder="Category"
             options={categoryOptions}
+						onChange={this.logChangeCategory}
             clearable={true}
             searchable={false}
 					/>
@@ -69,7 +108,8 @@ export default class Subnav extends React.Component {
             value={this.state.popularitySelection}
             placeholder="Sorting"
             options={popularityOptions}
-            clearable={false}
+						onChange={this.logChangePopularity}
+            clearable={true}
             searchable={false}
 					/>
 				</div>
@@ -79,7 +119,8 @@ export default class Subnav extends React.Component {
             value={this.state.ratingSelection}
             placeholder="Rating"
             options={ratingOptions}
-            clearable={false}
+						onChange={this.logChangeRating}
+            clearable={true}
             searchable={false}
 					/>
 				</div>
@@ -98,4 +139,5 @@ export default class Subnav extends React.Component {
 Subnav.propTypes = {
 	toggle: React.PropTypes.bool,
 	handleGrid: React.PropTypes.func,
+	content: React.PropTypes.array.isRequired,
 };

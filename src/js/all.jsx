@@ -34,7 +34,7 @@ export default class All extends React.Component {
 				<main>
 					<Sidebar />
 					<div className="columns small-9 main">
-						<Subnav toggle={this.state.grid} handleGrid={this.toggleGrid} />
+						<Subnav toggle={this.state.grid} handleGrid={this.toggleGrid} content={data} />
 						<Main content={data} style={this.state.grid} />
 					</div>
 				</main>

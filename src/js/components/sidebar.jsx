@@ -18,9 +18,6 @@ export default class Sidebar extends React.Component {
 						Upload content
 					</p>
 				</Link>
-				<div className="chamber-triple--top">
-          This is a React app. There&apos;s no database at this point, all the data is gathered from a .json file instead.
-				</div>
 				<footer className="text--center">
 					<span>
 						Copyright &copy; 2016 Copyright Holder. All Rights Reserved.

@@ -28,7 +28,7 @@ export default class Navigation extends React.Component {
 							<input className="search" placeholder="Search..." />
 						</div>
 						<div className="columns small-8 medium-6 large-4 xlarge-4 xxlarge-4">
-							<Dropdown style={userActive} username="Kevin Østerkilde" />
+							<Dropdown style={userActive} username="Kevin Østerkilde" image="https://pbs.twimg.com/profile_images/764956033177546758/KurPHCpC_400x400.jpg" />
 						</div>
 					</div>
 				</div>
